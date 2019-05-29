@@ -5,7 +5,7 @@ node {
     // Clone repo
 	git branch: 'master', 
 	credentialsId: 'github', 
-	url: 'https://github.com/javahometech/pipelinerepo'
+	url: 'https://github.com/sainuthalapati/pipelinerepo'
    
    }
 	
@@ -16,7 +16,7 @@ node {
    }
    
    stage('deploy-dev'){
-       def tomcatDevIp = '54.183.11.73'
+       def tomcatDevIp = '54.219.167.225'
 	   def tomcatHome = '/opt/tomcat8/'
 	   def webApps = tomcatHome+'webapps/'
 	   def tomcatStart = "${tomcatHome}bin/startup.sh"
